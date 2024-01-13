@@ -1,0 +1,15 @@
+<div class="form-group col-md-6 offset-md-3 mt-1">
+    <input class="form-control me-sm-2" type="text" placeholder="Recherche par nom et/ou prenom...">
+</div>
+<div class="row">
+    <div class="col-md-4" *ngFor="let emp of temployee">
+        <div class="card mb-2 mt-2" style="width: 30rem;">
+            <div class="card-header">{{emp.fname | uppercase}} {{emp.lname}} 
+            </div>
+            <div class="card-body">
+                <img class="image-container"  src="assets/images/{{emp.image}}.webp"  alt="...">
+                <p class="card-text">{{emp.experience}} ans d'expérience</p>
+            </div>
+        </div>
+    </div>
+</div>
